@@ -1,12 +1,3 @@
-/**
- * Poetry MCP — PoetryDB API (free, no auth)
- *
- * Tools:
- * - search_poems: search poems by title
- * - poems_by_author: all poems by a specific author
- * - random_poems: one or more random poems
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -21,6 +12,16 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Poetry MCP — PoetryDB API (free, no auth)
+ *
+ * Tools:
+ * - search_poems: search poems by title
+ * - poems_by_author: all poems by a specific author
+ * - random_poems: one or more random poems
+ */
+
 
 const BASE_URL = 'https://poetrydb.org';
 

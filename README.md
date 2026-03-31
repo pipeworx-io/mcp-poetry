@@ -1,14 +1,16 @@
-# @pipeworx/mcp-poetry
+# mcp-poetry
 
-MCP server for poetry — search poems by title, author, or lines via PoetryDB.
+Poetry MCP — PoetryDB API (free, no auth)
+
+Part of the [Pipeworx](https://pipeworx.io) open MCP gateway.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search_poems` | Search for poems by title |
-| `poems_by_author` | Get all poems by a specific author |
-| `random_poems` | Get one or more random poems from the collection |
+| `search_poems` | Search for poems by title. Returns matching poems with their full text. |
+| `poems_by_author` | Get all poems by a specific author. Returns poem titles and full text. |
+| `random_poems` | Get one or more random poems from the collection. |
 
 ## Quick Start
 
@@ -24,7 +26,7 @@ Add to your MCP client config:
 }
 ```
 
-## CLI Usage
+Or use the CLI:
 
 ```bash
 npx pipeworx use poetry
